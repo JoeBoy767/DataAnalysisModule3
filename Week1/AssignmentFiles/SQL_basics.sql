@@ -66,5 +66,6 @@ limit 3;
 --      in the format "Last, First".
 select
 	concat(last_name, ', ', first_name) as customer_name
-from customers;
+from customers
+order by last_name, first_name;
 
